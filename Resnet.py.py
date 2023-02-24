@@ -393,3 +393,6 @@ history = pr_model.fit(tr_ds, epochs=30,
 
 test_ds = CIFAR_Dataset(test_images, test_oh_labels, batch_size=BATCH_SIZE, augmentor=None, shuffle=False, pre_func=resnet_preprocess)
 pr_model.evaluate(test_ds)
+
+
+// end
