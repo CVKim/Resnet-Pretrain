@@ -165,9 +165,6 @@ output = identity_block(x, middle_kernel_size=3, filters=[64, 64, 256], stage=2,
 identity_layers = Model(inputs=input_tensor, outputs=output)
 identity_layers.summary()
 
-
-
-
 def do_first_conv(input_tensor):
     # 7x7 Conv 연산 수행하여 feature map 생성하되 input_tensor 크기(image 크기)의 절반으로 생성.  filter 개수는 64개 
     # 224x224 를 input을 7x7 conv, strides=2로 112x112 출력하기 위해 Zero padding 적용. 
