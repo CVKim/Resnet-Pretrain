@@ -183,7 +183,6 @@ output = do_first_conv(input_tensor)
 model = Model(inputs=input_tensor, outputs=output)
 model.summary()
 
-
 def create_resnet(in_shape=(224, 224, 3), n_classes=10):
     input_tensor = Input(shape=in_shape)
     
